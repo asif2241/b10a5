@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batch 10 A5</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- daisyi UI and tailwind link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="sticky top-0">
+        <!-- navbar section start -->
+        <nav class="bg-[#F9F7F3]">
+            <div class="navbar  gap-2 w-full lg:max-w-[80%] mx-auto lg:py-5 py-0">
+                <div class="navbar-start">
+
+                    <a href="index.html" class="btn bg-[#B4F461] text-xl font-semibold">HOME</a>
+                </div>
+                <div class="navbar-center gap-2 lg:flex lg:flex-row flex-col ">
+                    <img src="./images/logo.png" alt="">
+                    <h3 class="lg:text-3xl text-sm font-bold">Donate Bangladesh</h3>
+                </div>
+                <div class="navbar-end">
+                    <p class="flex justify-center gap-2 font-bold lg:text-xl ">
+                        <span><img src="./images/coin.png" alt=""></span>
+                        <span id="total-balance">5500</span>
+                        <span>BDT</span>
+                    </p>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Accordion Section -->
+     <div class="w-full lg:max-w-[80%] mx-auto mt-10 lg:py-5 py-0">
+        <div class="collapse collapse-plus bg-base-200 border border-gray-300 rounded-md mb-4">
+            <input type="radio" name="my-accordion-3" checked="checked" />
+            <div class="collapse-title text-3xl font-bold">What Is The Document Object Model (DOM)?</div>
+            <div class="collapse-content">
+              <p class="text-xl font-semibold text-gray-500">The Document Object Model (DOM) is a programming interface that represents the structure of an HTML or XML document as a tree of objects, allowing developers to access, modify, and interact with content and layout dynamically. It provides methods and properties to manipulate elements, attributes, and events in a web page.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-base-200 border border-gray-300 rounded-md mb-4">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-3xl font-bold">How Do You Select an Element from DOM?</div>
+            <div class="collapse-content">
+              <p class="text-xl font-semibold text-gray-500">
+                You can select an element from the DOM using methods like document.getElementById('id'), document.querySelector('.class'), or document.querySelectorAll('tag'). These allow you to access and manipulate specific elements in the document.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-base-200 border border-gray-300 rounded-md mb-4">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title  text-3xl font-bold">What is Event Delegation in DOM? and Why It Is Useful?</div>
+            <div class="collapse-content">
+              <p class="text-xl font-semibold text-gray-500">Event Delegation is a technique in the DOM where a single event listener is attached to a parent element to handle events for its child elements. It works by utilizing event bubbling, where events propagate from a child to its parent. Instead of adding listeners to multiple child elements, you attach one listener to the parent and determine the clicked element using event.target. This approach is especially useful for managing dynamically created elements. It improves performance and simplifies event management in large or dynamic DOM structures.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-base-200 border border-gray-300 rounded-md mb-4">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title  text-3xl font-bold">How Do You Manipulate an Elements Attribute and Style Usind DOM?</div>
+            <div class="collapse-content">
+              <p class="text-xl font-semibold text-gray-500">
+                You can manipulate an element's attributes using methods like setAttribute() and getAttribute(), or directly modify properties like element.id or element.src. For styles, you can use the style property, e.g., element.style.color = 'red', or add/remove classes with classList. These methods allow dynamic changes to an element’s appearance and behavior.</p>
+            </div>
+          </div>
+     </div>
+    <script src="./js/utilities.js"></script>
+    <script src="./js/app.js"></script>
+
+</body>
+
+</html>
